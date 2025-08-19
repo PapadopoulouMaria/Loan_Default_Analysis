@@ -1,32 +1,49 @@
 # Loan Default Analysis
 
-## Project Overview
-Analyze LendingClub loan data to explore factors affecting loan defaults.
+This project explores Lending Club loan data to understand factors that influence loan defaults. It includes **data cleaning, feature engineering, exploratory data analysis (EDA), and visualizations**.
 
-## Data
-- Source: LendingClub (2007 accepted loans)
-- Key columns: loan amount, interest rate, employment length, credit grade, purpose, etc.
+---
 
-## Data Cleaning
-- Removed rows with missing critical values.
-- Converted `term` to numeric.
-- Standardized `emp_length`.
-- Converted `revol_util` to numeric.
-- Created a `default` column (1 if Charged Off / Default / Late, 0 otherwise).
+## Dataset
 
-## Exploratory Data Analysis
-- Default distribution and rate.
-- Distribution of numeric features.
-- Default rate by grade, term, and purpose.
-- Correlation analysis.
+The dataset used in this project is publicly available on Kaggle:
 
-## Scripts
-- `scripts/data_cleaning.py` – main cleaning and EDA script.
+[Lending Club Loan Data (2007-2018)](https://www.kaggle.com/datasets/wordsforthewise/lending-club?select=accepted_2007_to_2018Q4.csv.gz)
 
-## Next Steps
-- Predictive modeling of loan defaults.
-- Interactive visualization with Power BI.
+**Note:** The raw dataset is **not included** in this repository due to size. After downloading from Kaggle, place the relevant CSV file in the `data/` folder.
 
-## Requirements
+---
+
+## Project Structure
+
+
+---
+
+## Features Processed
+
+The project processes and analyzes these key features:
+
+- Loan amount (`loan_amnt`)
+- Loan term (`term`)
+- Interest rate (`int_rate`)
+- Installment amount (`installment`)
+- Credit grade (`grade`, `sub_grade`)
+- Employment length (`emp_length`)
+- Home ownership (`home_ownership`)
+- Annual income (`annual_inc`)
+- Debt-to-income ratio (`dti`)
+- Revolving credit utilization (`revol_util`)
+- Loan purpose (`purpose`)
+- State of residence (`addr_state`)
+- Credit history (`delinq_2yrs`, `inq_last_6mths`, `open_acc`, `pub_rec`, `total_acc`)
+- Loan status and default indicator
+
+---
+
+## How to Use
+
+1. **Clone the repository:**
+
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/<your-username>/Loan_Default_Analysis.git
+cd Loan_Default_Analysis

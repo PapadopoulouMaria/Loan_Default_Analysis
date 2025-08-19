@@ -1,6 +1,29 @@
+# Python
 __pycache__/
 *.pyc
-*.csv
-*.ipynb_checkpoints
-cleaned_data/
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (large datasets)
 data/
+*.csv
+*.csv.gz
+*.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
