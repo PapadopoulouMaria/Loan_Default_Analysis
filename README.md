@@ -10,8 +10,6 @@ The dataset used in this project is publicly available on Kaggle:
 
 [Lending Club Loan Data (2007-2018)](https://www.kaggle.com/datasets/wordsforthewise/lending-club?select=accepted_2007_to_2018Q4.csv.gz)
 
-**Note:** The raw dataset is **not included** in this repository due to size. After downloading from Kaggle, place the relevant CSV file in the `data/` folder.
-
 ---
 
 ## Project Structure
@@ -39,11 +37,3 @@ The project processes and analyzes these key features:
 - Loan status and default indicator
 
 ---
-
-## How to Use
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/<your-username>/Loan_Default_Analysis.git
-cd Loan_Default_Analysis
